@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController" storyboardIdentifier="LoginViewControllerId">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="18" translatesAutoresizingMaskIntoConstraints="NO" image="background.png">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="277" y="232" width="45" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal" image="vk_logo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="26" firstItem="23" firstAttribute="height" constant="30"/>
+                                    <constraint id="27" firstItem="23" firstAttribute="width" constant="45"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="24" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="284" y="304" width="30" height="45"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal" image="fb_logo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="31" firstItem="24" firstAttribute="height" constant="45"/>
+                                    <constraint id="32" firstItem="24" firstAttribute="width" constant="30"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="19" firstItem="18" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
+                            <constraint id="20" firstItem="18" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom"/>
+                            <constraint id="21" firstItem="18" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="22" firstItem="18" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing"/>
+                            <constraint id="25" firstItem="23" firstAttribute="centerX" secondItem="18" secondAttribute="centerX"/>
+                            <constraint id="28" firstItem="23" firstAttribute="top" secondItem="18" secondAttribute="top" constant="232"/>
+                            <constraint id="29" firstItem="18" firstAttribute="centerX" secondItem="24" secondAttribute="centerX" constant="1"/>
+                            <constraint id="30" firstItem="24" firstAttribute="top" secondItem="23" secondAttribute="bottom" constant="42"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vkLoginButton" destination="23" id="name-outlet-23"/>
+                        <outlet property="fbLoginButton" destination="24" id="name-outlet-24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="11">
+            <objects>
+                <viewController id="12" sceneMemberID="viewController" customClass="ProfileController" storyboardIdentifier="ProfileViewControllerId">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9"/>
+                        <viewControllerLayoutGuide type="bottom" id="10"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="13">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="45" translatesAutoresizingMaskIntoConstraints="NO" image="background.png">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="52" translatesAutoresizingMaskIntoConstraints="NO" image="profile_panel.png">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <constraints>
+                                    <constraint id="56" firstItem="52" firstAttribute="height" constant="300"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="59" translatesAutoresizingMaskIntoConstraints="NO" image="image_circle.png">
+                                <rect key="frame" x="200" y="37" width="200" height="200"/>
+                                <constraints>
+                                    <constraint id="68" firstItem="59" firstAttribute="height" constant="200"/>
+                                    <constraint id="69" firstItem="59" firstAttribute="width" constant="200"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="70" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="236" y="70" width="130" height="130"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="83" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="1" y="262" width="599" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="145" firstItem="83" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="105">
+                                <rect key="frame" x="290" y="330" width="20" height="20"/>
+                                <color key="color" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="148" firstItem="105" firstAttribute="height" constant="20"/>
+                                    <constraint id="149" firstItem="105" firstAttribute="width" constant="20"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="114" translatesAutoresizingMaskIntoConstraints="NO" image="like.png">
+                                <rect key="frame" x="285" y="470" width="30" height="30"/>
+                                <constraints>
+                                    <constraint id="152" firstItem="114" firstAttribute="height" constant="30"/>
+                                    <constraint id="153" firstItem="114" firstAttribute="width" constant="30"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="127" translatesAutoresizingMaskIntoConstraints="NO" image="likes_given.png">
+                                <rect key="frame" x="390" y="470" width="20" height="30"/>
+                                <constraints>
+                                    <constraint id="172" firstItem="127" firstAttribute="height" constant="30"/>
+                                    <constraint id="173" firstItem="127" firstAttribute="width" constant="20"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="128" translatesAutoresizingMaskIntoConstraints="NO" image="likes_taken.png">
+                                <rect key="frame" x="190" y="470" width="20" height="30"/>
+                                <constraints>
+                                    <constraint id="168" firstItem="128" firstAttribute="height" constant="30"/>
+                                    <constraint id="169" firstItem="128" firstAttribute="width" constant="20"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="182" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="10" y="25" width="30" height="20"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal" image="menu_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="285" firstItem="182" firstAttribute="height" constant="20"/>
+                                    <constraint id="286" firstItem="182" firstAttribute="width" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="289" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="550" y="25" width="30" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal" image="icon_search.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="292" firstItem="289" firstAttribute="height" constant="30"/>
+                                    <constraint id="293" firstItem="289" firstAttribute="width" constant="30"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="48" firstItem="45" firstAttribute="trailing" secondItem="13" secondAttribute="trailing"/>
+                            <constraint id="49" firstItem="45" firstAttribute="leading" secondItem="13" secondAttribute="leading"/>
+                            <constraint id="50" firstItem="45" firstAttribute="bottom" secondItem="13" secondAttribute="bottom"/>
+                            <constraint id="51" firstItem="45" firstAttribute="top" secondItem="13" secondAttribute="top"/>
+                            <constraint id="53" firstItem="52" firstAttribute="leading" secondItem="45" secondAttribute="leading"/>
+                            <constraint id="54" firstItem="52" firstAttribute="trailing" secondItem="45" secondAttribute="trailing"/>
+                            <constraint id="55" firstItem="52" firstAttribute="bottom" secondItem="45" secondAttribute="bottom"/>
+                            <constraint id="66" firstItem="59" firstAttribute="centerX" secondItem="45" secondAttribute="centerX"/>
+                            <constraint id="67" firstItem="59" firstAttribute="top" secondItem="45" secondAttribute="top" constant="37"/>
+                            <constraint id="75" firstItem="70" firstAttribute="top" secondItem="59" secondAttribute="top" constant="33"/>
+                            <constraint id="76" firstItem="70" firstAttribute="leading" secondItem="59" secondAttribute="leading" constant="36"/>
+                            <constraint id="77" firstItem="59" firstAttribute="trailing" secondItem="70" secondAttribute="trailing" constant="34"/>
+                            <constraint id="78" firstItem="59" firstAttribute="bottom" secondItem="70" secondAttribute="bottom" constant="37"/>
+                            <constraint id="142" firstItem="83" firstAttribute="leading" secondItem="45" secondAttribute="leading" constant="1"/>
+                            <constraint id="143" firstItem="83" firstAttribute="trailing" secondItem="45" secondAttribute="trailing"/>
+                            <constraint id="144" firstItem="83" firstAttribute="top" secondItem="59" secondAttribute="bottom" constant="25"/>
+                            <constraint id="146" firstItem="105" firstAttribute="centerX" secondItem="52" secondAttribute="centerX"/>
+                            <constraint id="147" firstItem="105" firstAttribute="top" secondItem="83" secondAttribute="bottom" constant="38"/>
+                            <constraint id="150" firstItem="114" firstAttribute="centerX" secondItem="52" secondAttribute="centerX"/>
+                            <constraint id="151" firstItem="114" firstAttribute="top" secondItem="52" secondAttribute="centerY" constant="20"/>
+                            <constraint id="166" firstItem="114" firstAttribute="leading" secondItem="128" secondAttribute="trailing" constant="75"/>
+                            <constraint id="167" firstItem="128" firstAttribute="top" secondItem="52" secondAttribute="centerY" constant="20"/>
+                            <constraint id="170" firstItem="127" firstAttribute="leading" secondItem="114" secondAttribute="trailing" constant="75"/>
+                            <constraint id="171" firstItem="127" firstAttribute="top" secondItem="52" secondAttribute="centerY" constant="20"/>
+                            <constraint id="287" firstItem="182" firstAttribute="leading" secondItem="45" secondAttribute="leading" constant="10"/>
+                            <constraint id="288" firstItem="182" firstAttribute="top" secondItem="45" secondAttribute="top" constant="25"/>
+                            <constraint id="290" firstItem="289" firstAttribute="top" secondItem="45" secondAttribute="top" constant="25"/>
+                            <constraint id="291" firstItem="45" firstAttribute="trailing" secondItem="289" secondAttribute="trailing" constant="20"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection id="274" property="gestureRecognizers" destination="273"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="userImage" destination="70" id="name-outlet-70"/>
+                        <outlet property="userName" destination="83" id="name-outlet-83"/>
+                        <outlet property="spinner" destination="105" id="name-outlet-105"/>
+                        <outlet property="userPanel" destination="52" id="name-outlet-52"/>
+                        <outlet property="background" destination="45" id="name-outlet-45"/>
+                        <outlet property="menuButton" destination="182" id="name-outlet-182"/>
+                        <outlet property="imageCircle" destination="59" id="name-outlet-59"/>
+                        <outlet property="likesTaken" destination="128" id="name-outlet-128"/>
+                        <outlet property="likesGiven" destination="127" id="name-outlet-127"/>
+                        <outlet property="like" destination="114" id="name-outlet-114"/>
+                        <outlet property="searchButton" destination="289" id="name-outlet-289"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="273"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="-5"/>
+        </scene>
+        <scene sceneID="300">
+            <objects>
+                <viewController id="301" sceneMemberID="viewController" customClass="SearchController" storyboardIdentifier="SearchViewControllerId">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="298"/>
+                        <viewControllerLayoutGuide type="bottom" id="299"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="302">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="311" translatesAutoresizingMaskIntoConstraints="NO" image="background.png">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="318" translatesAutoresizingMaskIntoConstraints="NO" image="search_icon.png">
+                                <rect key="frame" x="225" y="128" width="150" height="200"/>
+                                <constraints>
+                                    <constraint id="407" firstItem="318" firstAttribute="height" constant="200"/>
+                                    <constraint id="408" firstItem="318" firstAttribute="width" constant="150"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="335" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="225" y="496" width="150" height="50"/>
+                                <state key="normal" backgroundImage="go_back_button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="337" firstItem="335" firstAttribute="height" constant="50"/>
+                                    <constraint id="338" firstItem="335" firstAttribute="width" constant="150"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="412" translatesAutoresizingMaskIntoConstraints="NO" text="Searching">
+                                <rect key="frame" x="0.0" y="394" width="600" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="417" firstItem="412" firstAttribute="height" constant="35"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="421" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="279" y="446" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="423" firstItem="421" firstAttribute="height" constant="21"/>
+                                    <constraint id="424" firstItem="421" firstAttribute="width" constant="42"/>
+                                </constraints>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="314" firstItem="311" firstAttribute="top" secondItem="302" secondAttribute="top"/>
+                            <constraint id="315" firstItem="311" firstAttribute="leading" secondItem="302" secondAttribute="leading"/>
+                            <constraint id="316" firstItem="311" firstAttribute="bottom" secondItem="302" secondAttribute="bottom"/>
+                            <constraint id="317" firstItem="311" firstAttribute="trailing" secondItem="302" secondAttribute="trailing"/>
+                            <constraint id="336" firstItem="335" firstAttribute="centerX" secondItem="311" secondAttribute="centerX"/>
+                            <constraint id="339" firstItem="311" firstAttribute="bottom" secondItem="335" secondAttribute="bottom" constant="54"/>
+                            <constraint id="406" firstItem="318" firstAttribute="centerX" secondItem="311" secondAttribute="centerX"/>
+                            <constraint id="409" firstItem="311" firstAttribute="centerY" secondItem="318" secondAttribute="top" constant="172"/>
+                            <constraint id="415" firstItem="412" firstAttribute="leading" secondItem="311" secondAttribute="leading"/>
+                            <constraint id="416" firstItem="412" firstAttribute="trailing" secondItem="311" secondAttribute="trailing"/>
+                            <constraint id="418" firstItem="335" firstAttribute="top" secondItem="412" secondAttribute="bottom" constant="67"/>
+                            <constraint id="422" firstItem="421" firstAttribute="centerX" secondItem="311" secondAttribute="centerX"/>
+                            <constraint id="425" firstItem="335" firstAttribute="top" secondItem="421" secondAttribute="bottom" constant="29"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="335" id="name-outlet-335"/>
+                        <outlet property="searchingLabel" destination="421" id="name-outlet-421"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="303" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="-9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_icon.png" width="60" height="42"/>
+        <image name="profile_icon_custom.png" width="54" height="61"/>
+        <image name="draw.png" width="810" height="1142"/>
+        <image name="lose.png" width="810" height="1109"/>
+        <image name="win.png" width="810" height="1105"/>
+        <image name="oponent_fingers.png" width="497" height="593"/>
+        <image name="oponent_fist.png" width="392" height="510"/>
+        <image name="oponent_palm.png" width="411" height="600"/>
+        <image name="player_palm.png" width="437" height="612"/>
+        <image name="player_fist.png" width="364" height="556"/>
+        <image name="player_fingers.png" width="444" height="687"/>
+        <image name="fingers_gesture.png" width="409" height="342"/>
+        <image name="palm_gesture.png" width="410" height="343"/>
+        <image name="fist_gesture.png" width="343" height="343"/>
+        <image name="image_circle.png" width="234" height="233"/>
+        <image name="circle_green.png" width="234" height="233"/>
+        <image name="circle_yellow.png" width="234" height="233"/>
+        <image name="go_back_button.png" width="464" height="159"/>
+        <image name="search_icon.png" width="509" height="720"/>
+        <image name="back_button.png" width="93" height="120"/>
+        <image name="start_game.png" width="502" height="538"/>
+        <image name="player_panel.png" width="750" height="935"/>
+        <image name="oponent_panel.png" width="750" height="894"/>
+        <image name="game_icon.png" width="32" height="32"/>
+        <image name="profile_icon.png" width="32" height="32"/>
+        <image name="profile_panel.png" width="750" height="742"/>
+        <image name="background.png" width="1334" height="2374"/>
+        <image name="fb_logo.png" width="40" height="73"/>
+        <image name="like.png" width="96" height="82"/>
+        <image name="likes_given.png" width="57" height="64"/>
+        <image name="likes_taken.png" width="57" height="64"/>
+        <image name="vk_logo.png" width="80" height="46"/>
+        <image name="star_gray.png" width="137" height="136"/>
+        <image name="star_yellow.png" width="136" height="137"/>
+        <image name="player_lose.png" width="810" height="1109"/>
+        <image name="player_win.png" width="810" height="1105"/>
+        <image name="icon_search.png" width="60" height="60"/>
+    </resources>
+</document>

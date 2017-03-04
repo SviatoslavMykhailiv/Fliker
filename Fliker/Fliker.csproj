@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{72051F07-024F-4F98-90A6-4FC4BBA7F3D9}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Fliker</RootNamespace>
+    <AssemblyName>Fliker</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <IOSDebuggerPort>25098</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements></CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>81914080-24f3-4bf0-82c7-0253440458a7</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\Components\signalr-2.1.2.2\lib\ios-unified\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\signalr-2.1.2.2\lib\ios-unified\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\Components\signalr-2.1.2.2\lib\ios-unified\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\Components\signalr-2.1.2.2\lib\ios-unified\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.iOS">
+      <HintPath>..\Components\xamarin.auth-1.2.3.1\lib\ios-unified\Xamarin.Auth.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Authentication\" />
+    <Folder Include="Cache\" />
+    <Folder Include="Shared\" />
+    <Folder Include="Model\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Conectivity\" />
+    <Folder Include="API\" />
+    <Folder Include="Model\Mapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Shared\Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="SignController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>SignController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\IAuthProvider.cs" />
+    <Compile Include="Authentication\AuthType.cs" />
+    <Compile Include="Authentication\BaseAuthProvider.cs" />
+    <Compile Include="Authentication\VKAuthProvider.cs" />
+    <Compile Include="Cache\ICache.cs" />
+    <Compile Include="Cache\FileCache.cs" />
+    <Compile Include="Shared\Context.cs" />
+    <Compile Include="Model\IUser.cs" />
+    <Compile Include="Model\Secret.cs" />
+    <Compile Include="Constants\UIConstants.cs" />
+    <Compile Include="ProfileController.cs" />
+    <Compile Include="ProfileController.designer.cs">
+      <DependentUpon>ProfileController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conectivity\RequestDispatcherBase.cs" />
+    <Compile Include="Constants\ConectivityConstants.cs" />
+    <Compile Include="API\IAPIProvider.cs" />
+    <Compile Include="API\BaseAPIProvider.cs" />
+    <Compile Include="API\VKAPIService.cs" />
+    <Compile Include="Model\Mapper\IMapper.cs" />
+    <Compile Include="Model\Mapper\Mapper.cs" />
+    <Compile Include="Model\Mapper\MappedToAttribute.cs" />
+    <Compile Include="Model\VKUser.cs" />
+    <Compile Include="Shared\UIHelper.cs" />
+    <Compile Include="Authentication\FBAuthProvider.cs" />
+    <Compile Include="SearchController.cs" />
+    <Compile Include="SearchController.designer.cs">
+      <DependentUpon>SearchController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StartGameParams.cs" />
+    <Compile Include="GameController.cs" />
+    <Compile Include="GameController.designer.cs">
+      <DependentUpon>GameController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickGestureController.cs" />
+    <Compile Include="PickGestureController.designer.cs">
+      <DependentUpon>PickGestureController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Gesture.cs" />
+    <Compile Include="Model\RoundState.cs" />
+    <Compile Include="Model\PlayerRoundResult.cs" />
+    <Compile Include="API\FBApiService.cs" />
+    <Compile Include="API\APIFactory.cs" />
+    <Compile Include="Authentication\AuthFactory.cs" />
+    <Compile Include="Conectivity\ConnectionException.cs" />
+    <Compile Include="BaseController.cs" />
+    <Compile Include="Constants\AssetsNames.cs" />
+    <Compile Include="Conectivity\RequestDispatcher.cs" />
+    <Compile Include="Shared\GameScope.cs" />
+    <Compile Include="Model\Mode.cs" />
+    <Compile Include="GameResultController.cs" />
+    <Compile Include="GameResultController.designer.cs">
+      <DependentUpon>GameResultController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="signalr">
+      <Version>2.1.2.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.auth">
+      <Version>1.2.3.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menu_icon.png" />
+    <BundleResource Include="Resources\profile_icon_custom.png" />
+    <BundleResource Include="Resources\draw.png" />
+    <BundleResource Include="Resources\lose.png" />
+    <BundleResource Include="Resources\win.png" />
+    <BundleResource Include="Resources\oponent_fingers.png" />
+    <BundleResource Include="Resources\oponent_fist.png" />
+    <BundleResource Include="Resources\oponent_palm.png" />
+    <BundleResource Include="Resources\player_palm.png" />
+    <BundleResource Include="Resources\player_fist.png" />
+    <BundleResource Include="Resources\player_fingers.png" />
+    <BundleResource Include="Resources\fingers_gesture.png" />
+    <BundleResource Include="Resources\palm_gesture.png" />
+    <BundleResource Include="Resources\fist_gesture.png" />
+    <BundleResource Include="Resources\image_circle.png" />
+    <BundleResource Include="Resources\circle_green.png" />
+    <BundleResource Include="Resources\circle_yellow.png" />
+    <BundleResource Include="Resources\go_back_button.png" />
+    <BundleResource Include="Resources\search_icon.png" />
+    <BundleResource Include="Resources\back_button.png" />
+    <BundleResource Include="Resources\start_game.png" />
+    <BundleResource Include="Resources\player_panel.png" />
+    <BundleResource Include="Resources\oponent_panel.png" />
+    <BundleResource Include="Resources\game_icon.png" />
+    <BundleResource Include="Resources\profile_icon.png" />
+    <BundleResource Include="Resources\profile_panel.png" />
+    <BundleResource Include="Resources\background.png" />
+    <BundleResource Include="Resources\fb_logo.png" />
+    <BundleResource Include="Resources\like.png" />
+    <BundleResource Include="Resources\likes_given.png" />
+    <BundleResource Include="Resources\likes_taken.png" />
+    <BundleResource Include="Resources\vk_logo.png" />
+    <BundleResource Include="Resources\star_gray.png" />
+    <BundleResource Include="Resources\star_yellow.png" />
+    <BundleResource Include="Resources\player_lose.png" />
+    <BundleResource Include="Resources\player_win.png" />
+    <BundleResource Include="Resources\icon_search.png" />
+    <BundleResource Include="Resources\refresh.png" />
+    <BundleResource Include="Resources\logout.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

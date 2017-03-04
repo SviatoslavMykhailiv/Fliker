@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{72051F07-024F-4F98-90A6-4FC4BBA7F3D9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fliker/Authentication/FBAuthProvider.cs">
+    <Files>
+      <File FileName="Fliker/SignController.cs" Line="53" Column="3" />
+      <File FileName="Fliker/SearchController.cs" Line="146" Column="4" />
+      <File FileName="Fliker/ProfileController.cs" Line="155" Column="4" />
+      <File FileName="Fliker/PickGestureController.cs" Line="80" Column="16" />
+      <File FileName="Fliker/GameController.cs" Line="506" Column="4" />
+      <File FileName="Fliker/Conectivity/RequestDispatcherBase.cs" Line="72" Column="8" />
+      <File FileName="Fliker/Conectivity/RequestDispatcher.cs" Line="27" Column="4" />
+      <File FileName="Fliker/Constants/ConectivityConstants.cs" Line="25" Column="61" />
+      <File FileName="Fliker/Shared/UIHelper.cs" Line="39" Column="44" />
+      <File FileName="Fliker/Shared/Context.cs" Line="45" Column="1" />
+      <File FileName="Fliker/Main.cs" Line="9" Column="1" />
+      <File FileName="Fliker/Authentication/AuthFactory.cs" Line="16" Column="4" />
+      <File FileName="Fliker/Authentication/BaseAuthProvider.cs" Line="61" Column="29" />
+      <File FileName="Fliker/API/APIFactory.cs" Line="14" Column="17" />
+      <File FileName="Fliker/API/BaseAPIProvider.cs" Line="40" Column="4" />
+      <File FileName="Fliker/API/FBApiService.cs" Line="1" Column="1" />
+      <File FileName="Fliker/API/IAPIProvider.cs" Line="15" Column="28" />
+      <File FileName="Fliker/Authentication/VKAuthProvider.cs" Line="1" Column="1" />
+      <File FileName="Fliker/Model/PlayerRoundResult.cs" Line="1" Column="1" />
+      <File FileName="Fliker/Shared/GameScope.cs" Line="1" Column="1" />
+      <File FileName="Fliker/Constants/UIConstants.cs" Line="27" Column="3" />
+      <File FileName="Fliker/GameResultController.cs" Line="18" Column="3" />
+      <File FileName="Fliker/Model/Mapper/IMapper.cs" Line="1" Column="1" />
+      <File FileName="Fliker/Model/Mapper/MappedToAttribute.cs" Line="1" Column="1" />
+      <File FileName="Fliker/Model/Mapper/Mapper.cs" Line="31" Column="5" />
+      <File FileName="Fliker/AppDelegate.cs" Line="26" Column="23" />
+      <File FileName="Fliker/API/VKAPIService.cs" Line="34" Column="9" />
+      <File FileName="Fliker/Authentication/AuthType.cs" Line="1" Column="1" />
+      <File FileName="Fliker/Authentication/FBAuthProvider.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Fliker PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.785D53A5-7A88-4313-AF01-5F627B1B0EE3" />
+  <MultiItemStartupConfigurations />
+</Properties>
