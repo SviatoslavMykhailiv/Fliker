@@ -1,0 +1,14 @@
+*.nupkg
+*.dll
+*.ps1
+*.js
+SelfHost/SelfHost/obj/
+SelfHost/SelfHost/bin/Debug/Topshelf.xml
+SelfHost/packages/Newtonsoft.Json.6.0.4/lib/net45/Newtonsoft.Json.xml
+SelfHost/packages/
+SelfHost/SelfHost/bin/
+*.TMP
+SelfHost/Data/obj/
+SelfHost/Data/bin/
+SelfHost/Common/bin/
+SelfHost/Common/obj/
